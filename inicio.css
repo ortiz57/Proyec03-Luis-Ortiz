@@ -72,7 +72,7 @@
   }
   /* popovers */
   .popover {
-    background-color:#0065A0
+    background-color:#0065A0/*sustituye 'rojo' con tu color de elección*/
     border-color #0065A0;
   }
   .popover.right>.arrow:after {
@@ -180,7 +180,24 @@
     transform: scale(5.5); 
   }
   
-  
+  /* Breakpoints de tamaño de pantalla ----para consolas*/
+ @media (min-width: 1000px) {
+  /*  pantallas medianas */
+
+  .galeria-consolas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  /* para pantallas pequeñas */
+
+  .galeria-consolas {
+    display: none;
+  }
+}
   
   
   
